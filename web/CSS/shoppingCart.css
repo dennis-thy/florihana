@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    background-image: url("../../background/green\ wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orderList{
+margin-top: 100px;
+min-height: 50vh;
+}
+
+.wrap{
+    height: 100%;
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+    /* position: relative; */
+}
+
+.title{
+    background-color: #9C876F;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.title div:nth-child(2){
+    text-align: center;
+}
+
+.title div:nth-child(3){
+    text-align: end;
+    border-right: 1px solid #fff;
+}
+
+.title div:nth-child(5){
+    text-align: end;
+}
+
+.productList{
+    /* background-color: rgba(255, 255, 255, 0.75); */
+    padding: 10px;
+    /* border-bottom: 1px solid #A0A0A0; */
+    /* border-radius: 0 0 10px 10px; */
+    color: #9C876F;
+    font-size: 20px;
+    align-items: center;
+}
+
+.productList div:nth-child(2){
+    text-align: center;
+}
+
+.productList div:nth-child(3){
+    text-align: end;
+    border-right: 1px solid #9C876F;
+}
+
+.productList div:nth-child(5){
+    text-align: end;
+}
+
+.quantity-input{
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    color: #9C876F;
+    font-size: 20px;
+    width: 50px;
+    outline: 0;
+    border-bottom: 2px solid #9C876F;
+}
+
+.quantity-btn{
+    background-color: transparent;
+    color: #9C876F;
+    border: 0;
+    font-size: 28px;
+}
+
+.delete{
+    color: #A0A0A0;
+}
+
+.delete:hover{
+    cursor: pointer;
+    color: #9C876F;
+}
+
+.payment{
+    padding: 10px 10px 10px 35px;
+    margin-top: 10px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #9C876F;
+}
+
+.paymentBtn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 ;
+    border: 2px solid #9C876F;
+    text-decoration: none;
+    color: #9C876F;
+    transition: .5s;
+}
+
+.paymentBtn span{
+    transition: .5s;
+}
+
+.paymentBtn:hover{
+    background-color: #9C876F;
+}
+
+.paymentBtn:hover > span{
+    color: #fff;
+}
+
+@media(max-width:780px){
+    .quantity-input{
+        font-size: 20px;
+        width: 40px;
+    }
+    
+    .quantity-btn{
+        font-size: 20px;
+    }
+}

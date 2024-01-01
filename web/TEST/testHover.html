@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .demo {
+        width: 360px;
+        background-color: #74cccb;
+        margin: 80px auto 0;
+        padding: 20px 10px;
+        text-align: center;
+      }
+      .demo a.hover {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        color: transparent;
+        position: relative;
+        backface-visibility: hidden;
+      }
+
+      .demo a.hover:before,
+      .demo a.hover :after {
+        content: attr(data-hover);
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      
+      .demo a.hover:before {
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* .demo a.hover:after {
+        color: rgba(255, 255, 255, 0.9);
+        margin-top: 1em;
+      }
+      .demo a.hover:hover:before {
+        opacity: 0;
+        margin-top: -1em;
+      }
+      .demo a.hover:hover:after {
+        opacity: 0;
+        margin-top: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <a href="#" class="hover" data-hover="HOME">HOME</a>
+      <a href="#" class="hover" data-hover="NEWS">NEWS</a>
+      <a href="#" class="hover" data-hover="ABOUT">ABOUT</a>
+    </div>
+  </body>
+</html>

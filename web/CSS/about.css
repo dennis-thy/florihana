@@ -1,0 +1,777 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    background-image: url("../../background/green\ wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* navbar */
+body{
+    background-image: url("../../background/green\ wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: 10px 50px;
+    background-color: #89B9AD;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px #1B3D35 inset;
+}
+
+.logotext{
+    width: 180px;
+}
+
+.logotext img{
+    width: 100%;
+}
+
+#navmenu{
+    list-style-type: none;
+    /* 設置外距為自動 */
+    /* 使列表項目文本居中 */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#navmenu li{
+    width: 150px;
+    text-align: center;
+    position: relative;
+    /* 子選單預設會將ul向上推，要透過絕對定位讓子選單向下展開 */
+    display: inline-block;
+}
+
+#navmenu a{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14pt;
+    color: #fff;
+}
+
+#navmenu li path{
+    fill: #fff;
+}
+
+#navmenu .sub1 a{
+    width: 150px;
+    height: 25px;
+    font-size: 14pt;
+    padding-top: 10px;
+}
+
+#navmenu .sub1 a span{
+    font-size: 9pt;
+}
+
+
+/* #navmenu .sub2 a{
+    margin-left: 3px;
+    font-size: 9pt;
+} */
+
+/* 當鼠標懸停在 #navmenu 中的任何 li 元素上時，直接子代的 a 標籤的背景顏色會變為淺綠色（#cfc）。*/
+#navmenu li:hover > a,#navmenu li:hover path{
+    color: #FFE2C0;
+    fill: #FFE2C0;
+}
+
+/* 正在懸停的超連結，當鼠標懸停在已經因父元素 li 被懸停而變色的 a 標籤上時，該 a 標籤的背景顏色會變為黃色（#ff0）。 */
+#navmenu li:hover a:hover{
+    color: #FFE2C0;
+}
+
+#navmenu ul.sub1{
+    background-color: #89B9AD;
+    border-radius: 5px;
+    position: absolute;
+    /* a高度25，之後展開要保留1px距離 */
+    top: 28px;
+    left: 0px;
+    padding: 10px 0;
+}
+
+/* #navmenu ul.sub2{
+    position: absolute;
+    top: 0;
+    a寬度125，之後展開要保留1px距離
+    left: 126px;
+} */
+
+#navmenu ul.sub1{
+    display: none;
+}
+
+/* 第2層也要隱藏，不然在第1層展開時也會展開 */
+/* #navmenu ul.sub2{
+    display: none;
+} */
+
+#navmenu li:hover .sub1{
+    display: block;
+}
+
+#navmenu .bi-x-lg{
+    color: #fff;
+    display: none;
+    font-size: 32px;
+}
+
+/* #navmenu .sub1 li:hover .sub2{
+    display: block;
+} */
+
+/* nav-icon */
+.nav-icon{
+    display: flex;
+}
+
+.searchIcon{
+    padding: 5px;
+}
+
+.searchIcon:hover{
+    cursor: pointer;
+}
+
+.nav-icon a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-icon svg:hover{
+    transform: scale(1.5);
+    transition: transform 0.2s ease; /* 可以添加過渡效果以平滑放大動畫 */
+}
+
+.menuBurger{
+    display: none;
+    padding: 5px;
+}
+
+.menuBurger:hover{
+    cursor: pointer;
+}
+/* nav-icon end */
+
+
+@media(max-width:1280px){
+    #navmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #89B9AD;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 200px;
+        transition: 1s ease;
+    }
+    
+    #navmenu li{
+        /* 子選單預設會將ul向上推，要透過絕對定位讓子選單向下展開 */
+        display: inline;
+        margin-top: 40px;
+    }
+
+    #navmenu ul.sub1{
+        position: relative;
+        /* a高度25，之後展開要保留1px距離 */
+        top: 0;
+        padding: 0;
+    }
+
+    #navmenu .sub1 a{
+        padding-top: 0;
+    }
+    
+    #navmenu a span{
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #navmenu .bi-x-lg{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menuBurger{
+        display: block;
+    }
+}
+
+
+@media(max-width:576px){
+    .navbar{
+        padding: 10px 20px;
+    }
+    .logotext{
+        width: 130px;
+    }
+}
+
+
+/* navbar end */
+
+
+
+/* search */
+#search{
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1022;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+}
+
+#search input[type=text] {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #9C876F;
+    transition: width 1s ease;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+#search input[type=text]:focus {
+    width: 40%;
+    outline: none;
+}
+
+#search .bi-arrow-right-short{
+    color: #9C876F;
+    font-size: 48px;
+}
+
+#search .bi-x-lg{
+    color: #9C876F;
+    font-size: 40px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+}
+
+#search .bi-x-lg:hover{
+    cursor: pointer;
+}
+
+@media(max-width:1000px){
+    #search input[type=text] {
+        width: 250px;
+        font-size: 24px;
+    }
+    #search .bi-arrow-right-short{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:768px){
+    #search input[type=text] {
+        width: 200px;
+        font-size: 20px;
+    }
+    #search .bi-arrow-right-short{
+        font-size: 32px;
+    }
+    #search input[type=text]:focus {
+        width: 60%;
+    }
+}
+
+@media(max-width:576px){
+    #search input[type=text]:focus {
+        width: 70%;
+    }
+}
+/* search end */
+
+
+.banner{
+    height: 500px;
+    background-image: url("../../img/about/edit/lavender_garden.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.banner p{
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    margin: 0px;
+    font-style: italic;
+}
+
+.section1{
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+}
+
+.section1 .sectionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 200px;
+}
+
+.lavenderHandImg{
+    width: 200%;
+}
+
+.lavenderHandImg img{
+    width: 100%;
+}
+
+.section2{
+    display: flex;
+    height: 500px;
+    position: relative;
+    &::before {
+        content: '';
+        width: 80%;
+        height: 125%;
+        top: -5px;
+        left: 20%;
+        border-top: 5px solid #fff;
+        border-left: 5px solid #fff;
+        opacity: 55%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.back-view{
+    display: flex;
+    align-items: end;
+    width: 150%;
+}
+
+.back-view img{
+    width: 100%;
+}
+.section2Text {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 100px;
+    padding-right: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textPart1{
+    margin-top: 100px;
+}
+
+.textPart2{
+    margin-top: 100px;
+    font-style: italic;
+    text-align: end;
+}
+
+.section3{
+    display: flex;
+    margin-top: 100px;
+}
+
+.lab{
+    width: 90%;
+}
+
+.lab img{
+    width: 100%;
+}
+
+.section3Text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #fff;
+}
+
+.section3Text p {
+    font-size: 24px;
+}
+
+.section4{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    &::before {
+        content: '';
+        width: 50%;
+        height: 52%;
+        bottom: 0px;
+        left: 15%;
+        background-color:#9C876F;
+        opacity: 55%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.section4Text{
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    &::before {
+        content: '';
+        width: 50%;
+        height: 60%;
+        bottom: 0px;
+        left: 18%;
+        border-top: 5px solid #fff;
+        border-left: 5px solid #fff;
+        /* background-color:#fff; */
+        opacity: 55%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.section4Text p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.section4Img{
+    width: 60%;
+}
+
+.section4Img img{
+    width: 100%;
+}
+
+.section5{
+    display: flex;
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 55%;
+        bottom: 0px;
+        right: 10%;
+        background-color:#9C876F;
+        opacity: 55%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.section5Img{
+    width: 60%;
+}
+
+.section5Img img{
+    width: 100%;
+}
+
+.section5Text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    color: #fff;
+    font-size: 32px;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 65%;
+        bottom: 0px;
+        right: 15%;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        /* background-color:#fff; */
+        opacity: 55%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@media(max-width:1560px){
+    .section1 .sectionText{
+        padding: 50px 50px;
+    }
+
+    .section2Text {
+        font-size: 20px;
+        padding: 50px 50px;
+    }
+}
+
+@media(max-width:1220px){
+    .lavenderHandImg{
+        width: 100%;
+    }
+    
+    .lavenderHandImg img{
+        width: 400px;
+    }
+
+    .section1{
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+    .back-view{
+        width: 100%;
+    }
+
+    .back-view img{
+        width: 400px;
+    }
+
+    .section2Text {
+        font-size: 16px;
+    }
+
+    .section2{
+        display: flex;
+        height: 400px;
+    }
+
+    .section3Text{
+        padding: 0 10px;
+    }
+
+    .section3Text h2{
+        font-size: 24px;
+    }
+
+    .section3Text p{
+        font-size: 20px;
+    }
+
+    .lab{
+        width: 100%;
+    }
+    
+    .lab img{
+        width: 500px;
+    }
+    
+    .section4Img img{
+        width: 100%;
+    }
+
+    .section4Text{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .section5Img{
+        width: 100%;
+    }
+    
+    .section5Img img{
+        width: 500px;
+    }
+
+    .section5Text{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:1000px){
+    .lavenderHandImg{
+        display: none;
+    }
+
+    .sectionText{
+        margin: 30px;
+    }
+
+    .sectionText p{
+        margin-top: 0px;
+    }
+
+    .section2{
+        height: auto;
+        display: block;
+        position: relative;
+        &::before {
+            content:none;
+            width: 60%;
+            height: 125%;
+            top: -5px;
+            left: 20%;
+            border-top: 3px solid #fff;
+            border-left: 3px solid #fff;
+            opacity: 55%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+    .section2Text{
+        margin: 30px;
+    }
+
+    .textPart1, .textPart2{
+        margin-top: 0;
+    }
+
+    .section3{
+        display: block;
+    }
+
+    .section3Text{
+        text-align: left;
+        margin: 30px;
+    }
+
+
+    .section4Img, .section5Img{
+        display: none;
+    }
+
+    .section4{
+        display: block;
+        padding: 100px;
+        &::before {
+            content: '';
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            opacity: 55%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+    .section4Text{
+        margin: 0;
+        &::before {
+            content: '';
+            width: 50%;
+            height: 50%;
+            top: 20%;
+            left: 20%;
+            border: 3px solid #fff;
+            opacity: 55%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+
+    .section5{
+        display: block;
+        padding: 100px;
+        &::before {
+            content: '';
+            width: 70%;
+            height: 50%;
+            top: 25%;
+            left: 15%;
+            opacity: 55%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    .section5Text{
+        &::before {
+            content: '';
+            width: 70%;
+            height: 50%;
+            top: 20%;
+            left: 20%;
+            border: 3px solid #fff;
+            opacity: 55%;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    
+}
+
+@media(max-width:1000px){
+    .back-view img{
+        width: 100%;
+    }
+
+    .lab img{
+        width: 100%;
+    }
+}
+
+/* footer */
+
+.footer{
+    background-color: #9C876F;
+}
+
+.footer .row{
+    margin: 0;
+}
+
+.footer .logo{
+    margin: 0;
+    padding: 10px 0px 10px;
+}
+
+.footer h5{
+    margin-bottom: 30px;
+}
+
+.footer h5,.footer p{
+    color: #fff;
+    /* margin-bottom: 0; */
+}
+
+.copyright{
+    padding: 10px;
+    border-top:1px solid #fff;
+}
+
+.copyright p{
+    color: #E2CCB1;
+}
+
+@media(max-width:991px){
+    .footer .border-start{
+        border-left: 0 !important;
+    }
+}
+
+/* footer end */

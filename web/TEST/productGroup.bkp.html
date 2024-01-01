@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css" />
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./CSS/productGroup.bkp.css" />
+  </head>
+  <body>
+    <div class="container VerticalTabs">
+        <div class="row justify-content-around">
+            <div class="col-12 col-sm-1 list-group1 tab">
+                <button class="list-group-item tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+                  London
+                </button>
+                <button class="list-group-item tablinks" onclick="openCity(event, 'Paris')">
+                  Paris
+                </button>
+                <button class="list-group-item tablinks" onclick="openCity(event, 'Tokyo')">
+                  Tokyo
+                </button>
+            </div>
+            
+            <!-- Product group -->
+            <!-- 數量選擇器要改 -->
+            <div id="London" class="col-12 col-sm-10 tabcontent">
+
+                <!-- select -->
+                <select class="form-select form-select-sm ms-auto sort" aria-label="Small select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <!-- select end -->
+
+                <div  class="row row-cols-2 row-cols-lg-3 row-cols-xl-4 g-4 d-flex ">
+                    <div class="col">
+                        <div class="card1 text-center">
+                            <img src="../Product/Finish/Cedarwood Atlas.png" class="card-img-top w-25 mx-auto" alt="...">
+                            <div class="card-body  border-bottom">
+                            <h5 class="card-title mt-1 text-light">Card title</h5>
+                            <div class="row row-cols-3 capacity">
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center my-auto">$</div>
+                                <div class="col">
+                                    <select class="form-select" id="sel1" name="sellist1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="col shoppingCart my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card1 text-center">
+                            <img src="../Product/Finish/Cedarwood Atlas.png" class="card-img-top w-25 mx-auto" alt="...">
+                            <div class="card-body  border-bottom">
+                            <h5 class="card-title mt-1 text-light">Card title</h5>
+                            <div class="row row-cols-3 capacity">
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center my-auto">$</div>
+                                <div class="col">
+                                    <select class="form-select" id="sel1" name="sellist1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        </select>
+                                </div>
+                                <div class="col shoppingCart my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card1 text-center">
+                            <img src="../Product/Finish/Cedarwood Atlas.png" class="card-img-top w-25 mx-auto" alt="...">
+                            <div class="card-body  border-bottom">
+                            <h5 class="card-title mt-1 text-light">Card title</h5>
+                            <div class="row row-cols-3 capacity">
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center my-auto">$</div>
+                                <div class="col">
+                                    <select class="form-select" id="sel1" name="sellist1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        </select>
+                                </div>
+                                <div class="col shoppingCart my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card1 text-center">
+                            <img src="../Product/Finish/Cedarwood Atlas.png" class="card-img-top w-25 mx-auto" alt="...">
+                            <div class="card-body  border-bottom">
+                            <h5 class="card-title mt-1 text-light">Card title</h5>
+                            <div class="row row-cols-3 capacity">
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                                <div class="col btn btn-outline-light btn-sm">50ml</div>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center my-auto">$</div>
+                                <div class="col">
+                                    <select class="form-select" id="sel1" name="sellist1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        </select>
+                                </div>
+                                <div class="col shoppingCart my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- 商品群組未完成 -->
+            <div id="Paris" class="col-10 tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+          
+              <div id="Tokyo" class="col-10 tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+            <!-- Product group end -->
+
+
+
+            <!-- 分頁 -->
+              
+        </div>
+    </div>
+
+    
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+    //   document.getElementById("defaultOpen").click();
+    </script>
+
+  </body>
+</html>

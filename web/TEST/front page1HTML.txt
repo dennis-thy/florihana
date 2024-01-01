@@ -1,0 +1,85 @@
+<div class="navbar sticky-top">
+        <div class="logotext">
+            <img src="../Logo/logo-text拷貝.png" alt="">
+        </div>
+        
+        <ul id="navmenu">
+            <li><a href="#">新品上架</a></li>
+            <li><a href="#">hyperlink 2</a>
+                <!-- <span class="darrow">&#9660;</span> -->
+                <ul class="sub1">
+                    <li><a href="#">hyperlink 2.1</a></li>
+                    <li><a href="#">hyperlink 2.2</a></li>
+                    <li><a href="#">hyperlink 2.3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">hyperlink 3</a></li>
+            <li><a href="#">hyperlink 4</a>
+                <!-- <span class="darrow">&#9660;</span> -->
+                <ul class="sub1">
+                    <li><a href="#">hyperlink 4.1</a></li>
+                    <li><a href="#">hyperlink 4.2</a></li>
+                    <li><a href="#">hyperlink 4.3</a>
+                        <!-- <span class="rarrow">&#9654;</span> -->
+                        <!-- <ul class="sub2">
+                            <li><a href="#">hyperlink 4.3.1</a></li>
+                            <li><a href="#">hyperlink 4.3.2</a></li>
+                            <li><a href="#">hyperlink 4.3.3</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">hyperlink 5</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="20" height="20">
+                    <g>
+                        <path fill="#fff" d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path fill="#fff" d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path fill="#fff" d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20"><path fill="#fff" d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle fill="#fff" cx="7" cy="22" r="2"/><circle fill="#fff" cx="17" cy="22" r="2"/></svg>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="" id="navmenu">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+          <div class="col-lg-3 col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+          </div>
+    
+          <ul class="nav col-lg-6 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary"><h5>Home</h5></a></li>
+            <li class="position-relative">
+                <a href="#" class="nav-link"><h5>Home &nbsp; &loz;</h5>
+                </a>
+                <ul class="dropdown-menu position-absolute d-grid gap-1 rounded-3 mx-0 shadow w-220px sub1" data-bs-theme="light">
+                <li><a class="dropdown-item rounded-2 active" href="#"><h5>Home</h5></a></li>
+                <li><a class="dropdown-item rounded-2" href="#"><h5>Home</h5></a></li>
+                <li><a class="dropdown-item rounded-2" href="#"><h5>Home</h5></a></li>
+                <li><a class="dropdown-item rounded-2" href="#"><h5>Home</h5></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-link px-2"><h5>Home</h5></a></li>
+            <li><a href="#" class="nav-link px-2"><h5>Home</h5></a></li>
+            <li><a href="#" class="nav-link px-2"><h5>Home</h5></a></li>
+          </ul>
+    
+          <div class="col-lg-3 col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </header>
+      </div>

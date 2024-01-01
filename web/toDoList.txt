@@ -1,0 +1,50 @@
+＊frontPage
+    1.navbar-menu -> RWD漢堡 OK
+    2.navbar-search -> 彈跳視窗 OK、搜尋功能 OK
+    3.carousel -> RWD圖片縮放 OK
+    4.sectionProduct -> 產品列切換 OK
+    5.go to top -> 縮放按鈕 OK
+    6.banner #
+
+＊productGroup
+    1.重新排版-側邊欄（精油、花精、）OK
+    2.商品數量輸入、＋- OK
+    3.篩選器 OK
+    4.分頁 OK
+    5.加入購物車 OK
+
+＊product
+    1.排版 OK
+    2.商品數量輸入、＋- OK
+    3.加入購物車 OK
+    4.產品圖片切換 OK
+    5.
+
+＊shoppingCart
+    1. 排版 OK
+    2. 新增、刪除商品 OK
+    3. 金額加總 OK
+    
+
+＊Ｑ＆Ａ OK
+    1.排版
+    2.側邊欄-主題
+    3.問題與回答 -> 折疊效果
+    4.
+    5.
+
+＊about OK
+    1.排版
+    2.
+    3.
+    4.
+    5.
+
+注意！
+1.搜尋要用滑鼠點送出
+2.搜尋無結果沒做
+3.產品列頁面無全部商品
+
+
+＊PPT
+https://www.canva.com/design/DAF4kX-7X5g/DOy0hzP9AkVSdb8xyuD2vA/view?utm_content=DAF4kX-7X5g&utm_campaign=designshare&utm_medium=link&utm_source=editor

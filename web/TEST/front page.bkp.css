@@ -1,0 +1,21 @@
+.header,.dropdown-menu{
+    background-color: #89B9AD;
+}
+
+.logo-img{
+    width: 200px;
+}
+
+.navbar-nav a{
+    color: #fff;
+}
+
+.navbar-nav a:hover{
+    color: #FFECD5;
+    background-color: #89B9AD;
+    display: block;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #FFECD5;
+}

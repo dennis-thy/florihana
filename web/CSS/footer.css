@@ -1,0 +1,42 @@
+
+/* footer */
+
+.footer{
+    background-color: #9C876F;
+    margin-top: 100px;
+}
+
+.footer .row{
+    margin: 0;
+}
+
+.footer .logo{
+    margin: 0;
+    padding: 10px 0px 10px;
+}
+
+.footer h5{
+    margin-bottom: 30px;
+}
+
+.footer h5,.footer p{
+    color: #fff;
+    /* margin-bottom: 0; */
+}
+
+.copyright{
+    padding: 10px;
+    border-top:1px solid #fff;
+}
+
+.copyright p{
+    color: #E2CCB1;
+}
+
+@media(max-width:991px){
+    .footer .border-start{
+        border-left: 0 !important;
+    }
+}
+
+/* footer end */

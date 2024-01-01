@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <style>
+      .btn {
+        background-color:red;
+      }
+      .background {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        background-color:blue;
+        display:none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 加上onclick事件在被點擊調用openBackground方法 -->
+    <div class="btn" onclick="openBackground()">按我</div>
+<div class="background">
+  <div class="close-btn" onclick="closeBackground()">X</div>
+  </div>
+  <script>
+  // 建立修改background css的方法
+    function openBackground(){
+      // 使用document.querySelector('.background')方法取得.background的元素宣告成background變數
+          let background = document.querySelector('.background')
+          // 修改background元素底下的屬性下display屬性的值為block
+          background.style.display = 'block';
+          //document.querySelector('.background').style.display = 'block';
+    }
+
+    function closeBackground(){
+        let background = document.querySelector(".background")
+        background.style.display = "none";
+    }
+  </script>
+  </body>
+</html>

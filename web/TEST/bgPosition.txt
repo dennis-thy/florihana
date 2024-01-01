@@ -1,0 +1,13 @@
+.bg-section2 {
+    position: relative;
+    &::before {
+        content: '';
+        width: 100vw;
+        height: 30vh;
+        top: 320px;
+        right: 0px;
+        background-color:#9DB2BF;
+        position: absolute;
+        z-index: -1;
+    }
+}
