@@ -39,7 +39,7 @@ function redirectToSearchPage() {
 
 var searchKey = $('input[name=search]').val();
 console.log(searchKey);
-window.location.href = "/web/search.html?key=" + encodeURIComponent(searchKey);
+window.location.href = "/florihana/web/search.html?key=" + encodeURIComponent(searchKey);
 }
 
 

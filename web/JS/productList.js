@@ -5,7 +5,7 @@ let products = [
         "category": "essential-oil",
         "price": 250,
         "specifications":"5g",
-        "shortDesc":"/web/productTeaTree.html",
+        "shortDesc":"/florihana/web/productTeaTree.html",
         "Desc": "",
         "Img": [
             "https://www.aromahealer.net/products/upload/images/goodssidepic/dc6e67e2-3972-4120-acec-7a29f9cb66e9_md.jpg",
@@ -17,7 +17,7 @@ let products = [
         "category": "essential-oil",
         "price": 600,
         "specifications":"5g",
-        "shortDesc":"/web/productFragonia.html",
+        "shortDesc":"/florihana/web/productFragonia.html",
         "Desc": "",
         "Img": [
             "https://www.aromahealer.net/products/upload/images/goodssidepic/41dd989b-0dd4-4d47-8e79-8dd81913afc2_md.jpg",
@@ -29,7 +29,7 @@ let products = [
         "category": "essential-oil",
         "price": 200,
         "specifications":"5g",
-        "shortDesc":"/web/productIary.html",
+        "shortDesc":"/florihana/web/productIary.html",
         "Desc": "",
         "Img": [
             "https://www.aromahealer.net/products/upload/images/goodssidepic/6abd1b97-b245-40ad-af03-ee1b6c2d98f6_md.jpg",
