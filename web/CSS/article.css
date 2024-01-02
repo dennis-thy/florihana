@@ -263,6 +263,7 @@ body{
 #search .bi-arrow-right-short{
     color: #9C876F;
     font-size: 48px;
+    cursor: pointer;
 }
 
 #search .bi-x-lg{
