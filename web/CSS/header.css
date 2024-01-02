@@ -83,7 +83,7 @@
     border-radius: 5px;
     position: absolute;
     /* a高度25，之後展開要保留1px距離 */
-    top: 28px;
+    top: 25px;
     left: 0px;
     padding: 10px 0;
 }
