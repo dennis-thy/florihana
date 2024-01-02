@@ -474,7 +474,7 @@ input[type="radio"]{
     align-items: center;
 }
 
-.section1 img{
+.cardGroup img{
     cursor: pointer;
     object-fit: cover; 
     /* box-shadow: 4px 4px 10px #000; */
@@ -632,12 +632,14 @@ input[type="radio"]{
     position: absolute;
     top: 55%;
     left:-50px;
+    cursor: pointer;
 }
 
 .sectionProduct .right{
     position: absolute;
     top: 55%;
     right:-45px;
+    cursor: pointer;
 }
 
 .sectionProduct .card5Bg{
@@ -669,9 +671,14 @@ input[type="radio"]{
     
 }
 
+.sectionProduct a{
+    cursor: pointer;
+}
+
 .productCard img{
     position: relative; 
     bottom: -50px;
+    cursor: pointer;
 }
 
 .rounded-bottom{
