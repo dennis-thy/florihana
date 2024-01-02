@@ -62,10 +62,10 @@ function addToCart(productId) {
   var cartMessage = document.getElementById("cartMessage");
   cartMessage.style.display = "flex";
 
-  // 2 秒後自動關閉購物車訊息
+  // 1.5 秒後自動關閉購物車訊息
   setTimeout(function () {
     cartMessage.style.display = "none";
-  }, 2000);
+  }, 1500);
 }
 
 //sectionProduct
