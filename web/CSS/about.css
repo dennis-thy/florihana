@@ -711,6 +711,7 @@ body{
         }
     }
     .section5Text{
+        padding: 0;
         &::before {
             content: '';
             width: 70%;
