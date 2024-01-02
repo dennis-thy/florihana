@@ -329,8 +329,13 @@ body{
     margin-bottom: 10px;
 }
 
+.thumbnail{
+    cursor: pointer;
+}
+
 .arrowDown, .arrowUp{
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .lgImg {
