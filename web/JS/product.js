@@ -44,11 +44,11 @@ function addToCart(productId) {
   
     // console.log(window.shoppingCart.getCart());
     // 顯示購物車訊息
-    // var cartMessage = document.getElementById("cartMessage");
-    // cartMessage.style.display = "flex";
+    var cartMessage = document.getElementById("cartMessage");
+    cartMessage.style.display = "flex";
   
     // // 2 秒後自動關閉購物車訊息
-    // setTimeout(function () {
-    //   cartMessage.style.display = "none";
-    // }, 2000);
+    setTimeout(function () {
+      cartMessage.style.display = "none";
+    }, 2000);
   }
